@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    background-color: #f0f0f0;
+    font-family:Ubuntu;
+}
+
+
+#main{
+    position: fixed;
+    display:grid;
+    top:2%;
+    grid-template-rows:30% 2% 60%;
+    height:100%;
+    width:70%;
+    margin-left:15%;
+  
+}
+#main #top-bar{
+    background-color:white;
+    height:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    border-radius: 5px;;
+}
+#main #top-bar form h2{
+    font-size:15px;
+    letter-spacing: 2px;;
+}
+#main #top-bar form input[type="text"]{
+    font-size: 25px;;
+    padding:10px 15px;;
+    border:solid 2px #b8b8b8;
+    border-radius: 10px;;
+    width:500px;
+    color: #696969;
+}
+#main #top-bar form button{
+    color: #75ffb6;
+    background-color: transparent;
+    border:solid 2px #75ffb6 ;
+    border-radius: 10px;;
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+#main #top-bar form button:hover{
+    background-color: #00c45c;
+    color:white;
+    transition: 0.3s ease ;
+    cursor: pointer;
+    border-color: white;
+}
+#main #notes{
+    background-color:#d1dfff;
+    height:100%;
+    position: relative;
+    display: block;
+    width:100%;
+    border-radius: 5px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#main #notes .note{
+    width:98%;
+    margin-left:1%;
+    margin-top:10px;
+    background-color: white;
+    font-size: 18px;
+    display:grid;
+    grid-template-columns: 30% 20% 40%;
+    justify-content: space-around;
+    overflow: hidden;
+    border-radius: 10px;;
+}
+
+.note #note-name{
+    width:100%;
+    padding:15px;
+    border-right: solid 2px #d1dfff;
+}
+.note #note-date{    
+    width:100%;
+    padding:15px;
+    border-right: solid 2px #d1dfff;
+}
+
+.note #note-options{
+    width:100%;
+    padding:15px;
+    display:flex;
+    justify-content: space-around;
+}
+.note #note-options .tray-button{
+    
+    font-size: 15px;;
+    display: flex;
+    cursor: pointer;
+}
+.note #note-options .tray-button i{
+    font-size: 20px;;
+}
+.note #note-options .tray-button:first-child{
+    color: blue;
+    opacity: 0.7;
+}
+
+.note #note-options .tray-button:nth-child(2){
+   
+    color: green;
+    opacity: 0.7;
+}
+.note #note-options .tray-button:nth-child(3){
+    color: red;
+    opacity: 0.7;
+}
+.note #note-options .tray-button:hover{
+    opacity: 1;
+
+}
